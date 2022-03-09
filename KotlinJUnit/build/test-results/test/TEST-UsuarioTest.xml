@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UsuarioTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-09T13:31:32" hostname="DESKTOP-TTEOC6Q" time="0.04">
+  <properties/>
+  <testcase name="alterarLoginTest()" classname="UsuarioTest" time="0.032"/>
+  <testcase name="criarPostagemTest()" classname="UsuarioTest" time="0.003"/>
+  <testcase name="verificarCadastroTest()" classname="UsuarioTest" time="0.002"/>
+  <system-out><![CDATA[Login alterado com sucesso
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
