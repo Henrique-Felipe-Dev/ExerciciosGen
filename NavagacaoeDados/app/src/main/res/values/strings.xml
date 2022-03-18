@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Navagacao e Dados</string>
+    <string name="nome">Nome</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="idade">Idade</string>
+    <string name="voltar">Voltar</string>
+</resources>

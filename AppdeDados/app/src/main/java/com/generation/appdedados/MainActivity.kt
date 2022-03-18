@@ -37,14 +37,17 @@ class MainActivity : AppCompatActivity() {
         //Mudamos o texto com o atributo text
         textResultado.text = valor.toString()
 
+        /*
         val imageResource = imgD6(valor)
 
         val imageDado = findViewById<ImageView>(R.id.imageDado)
 
         imageDado.setImageResource(imageResource)
+         */
         
     }
 
+    /*
     private fun imgD6(valor: Int): Int {
         return when(valor){
             1 -> R.drawable.dice_1
@@ -55,5 +58,6 @@ class MainActivity : AppCompatActivity() {
             else -> R.drawable.dice_6
         }
     }
+     */
 
 }
