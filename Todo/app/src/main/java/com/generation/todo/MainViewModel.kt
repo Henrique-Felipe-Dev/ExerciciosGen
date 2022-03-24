@@ -7,10 +7,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.generation.todo.model.Categoria
 import com.generation.todo.repository.Repository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
+import javax.inject.Inject
 
-class MainViewModel(
+@HiltViewModel //Indica que a nossa ViewModel vai injetar dependências
+class MainViewModel @Inject constructor(
     val repository: Repository
 ) : ViewModel() {
 
