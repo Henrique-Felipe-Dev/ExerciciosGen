@@ -24,6 +24,9 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
+        mainViewModel.listTarefas()
+
         binding = FragmentListBinding.inflate(layoutInflater, container, false)
 
         //Instaciar o adapter
@@ -41,6 +44,12 @@ class ListFragment : Fragment() {
         //Navegação para o Fragment de Form
         binding.floatingAdd.setOnClickListener {
             findNavController().navigate(R.id.action_listFragment_to_formFragment)
+        }
+
+        mainViewModel.myTarefaResponse.observe(viewLifecycleOwner){
+            response -> if (response.body() != null){
+                adapter.setLista(response.body()!!)
+            }
         }
 
         return binding.root
